@@ -1,0 +1,158 @@
+body {
+    background: rgb(203, 236, 255);
+    background: linear-gradient(0deg, rgba(203, 236, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+h1,
+h2,
+nav {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-decoration: underline rgb(183, 229, 255);
+    color: #45494e;
+}
+
+p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.blue {
+    color: rgb(0, 174, 255);
+    text-decoration: underline rgb(0, 174, 255);
+}
+
+.pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #45494e;
+    width: 70%;
+}
+
+.chapter5 {
+    text-align: center;
+}
+
+footer {
+    text-align: right;
+    color: gray;
+}
+
+.tg {
+    color: black;
+    text-decoration: none;
+}
+
+hr {
+    border-top: 2px solid #45494e;
+}
+
+/*МОБИЛА*/
+@media screen and (max-width: 610px) {
+    h1 {
+        padding-top: 40px;
+    }
+
+    .content {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+
+    header {
+        position: fixed;
+        margin-left: 85%;
+        margin-top: 10px;
+    }
+
+    .burger {
+        display: block;
+        border: rgba(0, 0, 0, 0.0);
+        background-color: rgba(0, 0, 0, 0.0);
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        text-align: right;
+        background-color: #fff;
+        min-width: 130px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        right: 0px;
+    }
+
+    nav a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        transition: .4s;
+    }
+
+    header:hover nav {
+        display: block;
+    }
+
+    nav a:hover {
+        background-color: #ddd;
+    }
+
+}
+
+/*КОМПУДАКТЕР*/
+@media screen and (min-width: 610px) {
+
+    .content {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .burger {
+        display: none;
+        border: rgba(0, 0, 0, 0.0);
+        background-color: rgba(0, 0, 0, 0.0);
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav_points {
+        text-transform: uppercase;
+        text-decoration: none;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 10px 20px 10px;
+        color: white;
+    }
+
+    .nav_points:hover {
+        background-color: rgb(0, 174, 255);
+        color: black;
+        transition: .4s;
+    }
+
+    header {
+        background-color: rgba(0, 0, 0, 0.4);
+        position: fixed;
+        width: 100%;
+    }
+
+    h1 {
+        padding-top: 50px;
+    }
+}
